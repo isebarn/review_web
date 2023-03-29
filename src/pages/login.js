@@ -4,6 +4,8 @@ import Button from "@/components/Button";
 import Link from "next/link";
 import userIcon from "../../public/images/icon/user-icon.png";
 import keyPassIcon from "../../public/images/icon/keypass-icon.png";
+import facebookIcon from "../../public/images/icon/facebook.png";
+import googleIcon from "../../public/images/icon/google.png";
 import { Form, Formik } from "formik";
 import { login } from "@/services/AuthServices";
 import * as Yup from 'yup';
@@ -54,10 +56,12 @@ export default function Login() {
                 <p className="text-700">Get access to your account</p>
               </div>
               <Button
+                icon={facebookIcon}
                 btnTxt="Sign in With google"
                 className="mb-3 btn-phoenix-secondary"
               />
               <Button
+              icon={googleIcon}
                 btnTxt="Sign in with facebook"
                 className=" btn-phoenix-secondary"
               />
@@ -65,7 +69,7 @@ export default function Login() {
                 <hr className="bg-200 mt-5 mb-4" />
                 <div className="divider-content-center">or use email</div>
               </div>
-              <Formik initialValues={initialValue} onSubmit={submitHandle} validationSchema={validateSchema}>
+              <Formik initialValues={initialValue} onSubmit={submitHandle} >
                 {({ values }) => (
                   <Form>
                     <InputField

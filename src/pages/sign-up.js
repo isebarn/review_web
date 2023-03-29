@@ -5,6 +5,8 @@ import { Form, Formik } from "formik";
 import InputField from "@/components/InputField";
 import userIcon from "../../public/images/icon/user-icon.png";
 import keyPassIcon from "../../public/images/icon/keypass-icon.png";
+import facebookIcon from "../../public/images/icon/facebook.png";
+import googleIcon from "../../public/images/icon/google.png";
 import { signUp } from "@/services/AuthServices";
 import * as Yup from 'yup';
 import { useRouter } from 'next/navigation';
@@ -57,10 +59,12 @@ export default function SignUp() {
                   <p className="text-700">Create your account today</p>
                 </div>
                 <Button
+                icon={googleIcon}
                   btnTxt="Sign up with google"
                   className="btn-phoenix-secondary mb-3"
                 />
                 <Button
+                  icon={facebookIcon}
                   btnTxt="Sign up with facebook"
                   className="btn-phoenix-secondary mb-3"
                 />
