@@ -29,7 +29,7 @@ const validateSchema = Yup.object().shape({
 export default function SignUp() {
   const [initialValue, setInitialValue] = useState(initValue);
   const router = useRouter();
-  
+
   const submitHandle = async (values) => {
     const data = values;
     const response = await signUp(data.email, data.password);
@@ -103,12 +103,10 @@ export default function SignUp() {
                       <div className="form-check mb-3">
                         <input
                           className="form-check-input"
-                          id="termsService"
                           type="checkbox"
                         />
                         <label
                           className="form-label fs--1 text-none"
-                          for="termsService"
                         >
                           I accept the <Link href="#!">terms </Link>and{" "}
                           <Link href="#!">privacy policy</Link>
