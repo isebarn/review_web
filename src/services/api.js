@@ -45,7 +45,7 @@ export const searchProduct = async (query) => {
         const params = {
             q:query
         }
-        const response = await axios.get(`${API_URL}/summary?product_id=com.duolingo` , {
+        const response = await axios.get(`${API_URL}/summary?product_id=` + query , {
             headers,
         });
         if(response && response.status === 200){
