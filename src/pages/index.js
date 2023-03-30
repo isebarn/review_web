@@ -38,7 +38,7 @@ const HomePage = () => {
         </div>
         <div className="col-sm-10 col-md-10 col-lg-8 col-xl-8 col-xxl-5">
         <p className="text-center">
-          {searchResult}
+           {searchResult}
         </p>
       </div>
       </div>
