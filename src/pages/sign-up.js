@@ -7,7 +7,7 @@ import userIcon from "../../public/images/icon/user-icon.png";
 import keyPassIcon from "../../public/images/icon/keypass-icon.png";
 import facebookIcon from "../../public/images/icon/facebook.png";
 import googleIcon from "../../public/images/icon/google.png";
-import { signUp } from "@/services/AuthServices";
+import { signUp } from "@/services/api";
 import * as Yup from 'yup';
 import { useRouter } from 'next/navigation';
 

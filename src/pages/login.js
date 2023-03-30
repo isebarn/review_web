@@ -7,7 +7,7 @@ import keyPassIcon from "../../public/images/icon/keypass-icon.png";
 import facebookIcon from "../../public/images/icon/facebook.png";
 import googleIcon from "../../public/images/icon/google.png";
 import { Form, Formik } from "formik";
-import { login } from "@/services/AuthServices";
+import { login } from "@/services/api";
 import * as Yup from 'yup';
 import { useRouter } from 'next/navigation';
 
